@@ -195,3 +195,264 @@ figure {
 .about > p {
   margin: 0;
 }
+
+/*Media Queries*/
+
+@media(min-width:760px)
+{
+  .site-logo {
+
+    position: fixed;
+    top: 1rem;
+    left: 5px;
+    width: 80px;
+    height: 80px;
+    margin: 0;
+    z-index: 500;
+
+  }
+
+  .site-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 12%;
+    z-index: 100;
+    background-color: lightgrey;
+  }
+
+
+  .site-nav-list,
+  .footer-nav-list {
+    float: left;
+    display: block;
+    margin-top: 100px;
+    padding: 10px;
+    list-style-type: none;
+  }
+
+  .site-nav-item {
+    float: left;
+    width: 150px;
+    height: 60px;
+    padding: 1.5em;
+    line-height: 1.5;
+    font-family: "Montserrat", "Source Code Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.6em;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  .site-nav-item > .fa {
+    font-size: 1.75rem;
+  }
+
+  .site-nav-item:hover {
+    background-color: #333333;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  .site-nav-item-label {
+
+    display: block;
+    margin-top: 2px;
+  }
+
+  .movie {
+    position: relative;
+  }
+
+
+  .movie-poster {
+    display: none;
+  }
+
+  .movie-details {
+    position: absolute;
+    bottom: 0;
+    left: 14%;
+    right: 0;
+    width: 86%;
+    padding: 1em;
+    color: #ffffff;
+    background-image: linear-gradient(transparent 50%, rgba(0, 0, 0, 0.7) 125%);
+  }
+
+  .movie-overview {
+    display: block;
+    width: 100%;
+
+  }
+
+  .movie-title-label {
+    font-family: "Montserrat", "Source Code Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.7em;
+    line-height: 1;
+    text-transform: uppercase;
+    color: gold;
+    margin: 0;
+  }
+
+  .movie-title {
+    margin: 0;
+    font-size: 2em;
+    line-height: 1.1;
+  }
+
+  ul.footer-nav-list
+  {
+    margin-top: 30px;
+    margin-left: 100px;
+  }
+
+  .footer-nav-item
+  {
+    color:white;
+  }
+
+}
+
+
+
+@media(min-width:760px)
+  {
+    .site-logo {
+
+      position: fixed;
+      top: 1rem;
+      left: 5px;
+      width: 80px;
+      height: 80px;
+      margin: 0;
+      z-index: 500;
+
+    }
+
+    .site-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 12%;
+      z-index: 100;
+      background-color: lightgrey;
+    }
+
+
+    .site-nav-list,
+    .footer-nav-list {
+      float: left;
+      display: block;
+      margin-top: 100px;
+      padding: 10px;
+      list-style-type: none;
+    }
+
+    .site-nav-item {
+      float: left;
+      width: 150px;
+      height: 60px;
+      padding: 1.5em;
+      line-height: 1.5;
+      font-family: "Montserrat", "Source Code Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 0.6em;
+      text-align: left;
+      text-transform: uppercase;
+    }
+
+    .site-nav-item > .fa {
+      font-size: 1.75rem;
+    }
+
+    .site-nav-item:hover {
+      background-color: #333333;
+      color: #ffffff;
+      cursor: pointer;
+    }
+
+    .site-nav-item-label {
+
+      display: block;
+      margin-top: 2px;
+    }
+
+    .movie {
+      position: relative;
+    }
+
+    .movie-poster,
+    .movie-backdrop {
+      display: block;
+    }
+
+    /*
+      Hide the poster on mobile devices, only show backdrop
+      TIP: Use media queries to reveal it on larger devices
+    */
+    .movie-poster {
+      display: none;
+    }
+
+    .movie-details {
+      position: absolute;
+      bottom: 0;
+      left: 14%;
+      right: 0;
+      width: 86%;
+      padding: 1em;
+      color: #ffffff;
+
+      /*
+        Linear gradients are a bit of an advanced CSS3 feature.
+          As seen below you specify the linear-gradient as a value for
+          the `background-image` property. It creates a gradient with as many stops
+          as you care to define. To learn more about how it works, read this article
+          and the related docs: https://medium.com/@patrickbrosset/do-you-really-understand-css-linear-gradients-631d9a895caf#.6yl8vdmiv
+      */
+
+      background-image: linear-gradient(transparent 50%, rgba(0, 0, 0, 0.7) 125%);
+    }
+
+    /*
+      Hide the overview on mobile devices
+      TIP: Use media queries to reveal it on larger devices
+    */
+    .movie-overview {
+      display: block;
+      width: 100%;
+
+    }
+
+    .movie-title-label {
+      font-family: "Montserrat", "Source Code Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 0.7em;
+      line-height: 1;
+      text-transform: uppercase;
+      color: gold;
+      margin: 0;
+    }
+
+    .movie-title {
+      margin: 0;
+      font-size: 2em;
+      line-height: 1.1;
+    }
+
+    ul.footer-nav-list
+    {
+      margin-top: 30px;
+      margin-left: 100px;
+    }
+
+    .footer-nav-item
+    {
+      color:white;
+    }
+
+
+
+
+  }
+
+
+}
